@@ -1,14 +1,13 @@
 export default function Features() {
   return (
-    <section className="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8">
-      <div className="grid max-w-xl items-start justify-between gap-5">
-        <div className="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
-          <span className="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
-            Everything you need. <br />
-            Nothing you don’t
+    <section className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center gap-5">
+        <div className="z-10 text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
+          <span className="bg-gradient-to-br from-white to-zinc-500/80 bg-clip-text text-center text-transparent">
+            Everything you need. Nothing you don’t
           </span>
         </div>
-        <div className="text-lg text-zinc-400/80">
+        <div className="z-10 max-w-xl text-center text-lg text-zinc-400/80">
           Financial management and visibility in one place. Experience{" "}
           <span className="text-zinc-200">a flexible toolkit</span> that makes
           every task feel like a breeze.

@@ -4,7 +4,8 @@
 
 @layer base {
   :root {
-    --theColor: 25, 92%, 51%;
+    --theColor: 188, 86%, 53%;
+    --bgColor: #09090b;
 
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -96,6 +97,54 @@
 
 .animate-starlight-right {
   animation: starlight-right 4s cubic-bezier(0.6, 0.6, 0, 1) infinite;
+}
+
+.kkGRBL.kkGRBL {
+  margin: -128px auto;
+}
+
+.iNVosx {
+  --color: hsl(var(--theColor));
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+  width: min(1200px, 100%);
+  margin: 0px auto;
+  height: 600px;
+  overflow: hidden;
+  mask-image: radial-gradient(circle, black, transparent 80%);
+}
+
+.iNVosx::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: radial-gradient(
+    circle at bottom center,
+    hsl(var(--theColor)),
+    transparent 70%
+  );
+  opacity: 0.4;
+}
+
+.cHRLGw {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: radial-gradient(circle at center bottom, black, transparent);
+}
+
+.iNVosx::after {
+  content: "";
+  position: absolute;
+  background: var(--bgColor);
+  width: 200%;
+  left: -50%;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 50%;
+  border-top: 1px solid hsl(var(--theColor), 0.4);
+  top: 50%;
 }
 
 @layer base {

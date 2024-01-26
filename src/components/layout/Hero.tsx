@@ -60,7 +60,7 @@ export default function Hero() {
                 }}
               >
                 <button
-                  className="hover:shadow-glow group relative rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100"
+                  className="hover:shadow-theColor group relative rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100"
                   type="button"
                   aria-haspopup="dialog"
                   aria-expanded="false"

@@ -23,7 +23,7 @@ const config = {
         untitled: ["var(--font-untitled)"],
       },
       colors: {
-        bgColor: "#09090B",
+        bgColor: "var(--bgColor)",
         theColor: "hsl(var(--theColor))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

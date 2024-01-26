@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Gabarito } from "next/font/google"
+import { Gabarito, Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google"
 import localFont from "next/font/local"
 
 import { cn } from "@/lib/utils"
@@ -8,30 +8,8 @@ import { TailwindIndicator } from "@/components/TailwindIndicator"
 
 import "./globals.css"
 
-const gabarito = Gabarito({ subsets: ["latin"] })
+const space = Plus_Jakarta_Sans({ subsets: ["latin"] })
 
-const aeonik = localFont({
-  src: "../../public/fonts/aeonik.woff2",
-  display: "swap",
-  variable: "--font-aeonik",
-})
-
-const untitled = localFont({
-  src: [
-    {
-      path: "../../public/fonts/sans-regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/sans-medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-  variable: "--font-untitled",
-})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -49,12 +27,11 @@ export default function RootLayout({
         <head />
         <body
           className={cn(
-            "font-aeonik selection:bg-theColor bg-[#1B1B1E] antialiased selection:text-white",
-            aeonik.variable,
-            untitled.variable
+            "selection:bg-theColor bg-bgColor antialiased selection:text-white",
+            space.className
           )}
         >
-          <div className="relative flex min-h-screen flex-col bg-zinc-950">
+          <div className="bg-bgColor relative flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
             {/* <SiteFooter /> */}
